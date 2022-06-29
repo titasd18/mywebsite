@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   scroll-behavior: smooth;
 }
 
@@ -15,14 +15,13 @@ a {
 
 * {
   box-sizing: border-box;
-  background: #0e1630;
+  background: #1A1A1A;
 }
 
 p {
   color: #808dad;
   line-height: 30px;
 }
-
 h1,
 h2,
 h3,
@@ -33,7 +32,7 @@ h6 {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.5rem !important;
 }
 
 section {
@@ -46,30 +45,62 @@ footer {
   border-top: 1px solid #171f38;
 }
 
-.primary__button {
-  background: #171f38 !important;
+.primary__btn {
+  background: #1A1A1A !important;
   padding: 7px 25px !important;
-  border: 1px solid #01d293 !important;
+  border: 1px solid #FAE824 !important;
+  border-radius: 5px;
 }
 
-.primary__button a {
+.primary__btn a {
   text-decoration: none;
-  color: #01d293;
+  color: #FAE824;
   background: transparent !important;
 }
 
-.secondary__button {
+.secondary__btn {
   background: transparent;
   border: none;
   outline: none;
   padding: 7px 25px;
 }
 
-.secondary__button a {
-  color: #01d293 !important;
+.secondary__btn a {
+  color: #FAE824 !important;
+}
+.primary__btn a:hover,
+.secondary__btn a:hover {
+  color: #FAE824;
 }
 
-.primary__button a:hover,
-.secondary__button a:hover {
-  color: unset;
+::-webkit-scrollbar {
+  width: 10px;
+  background: #808dad;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2em;
+  background: #171f38;
+}
+
+@media only screen and (max-width: 992px) {
+  p {
+    font-size: 0.9rem !important;
+  }
+
+  .primary__btn a,
+  .secondary__btn a {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section {
+    padding-top: 110px;
+  }
+
+  footer {
+    padding-top: 0;
+    border: none;
+  }
 }
